@@ -24,7 +24,7 @@ class Settings(BaseSettings):
 
     artifacts_root: str = ""
 
-    model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
+    model_config = {"env_file": (".env", ".env.local"), "env_file_encoding": "utf-8"}
 
 
 @lru_cache
